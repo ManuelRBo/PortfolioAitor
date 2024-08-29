@@ -10,8 +10,6 @@ const SwiperCarousel = () => {
     <div className='relative swiper-container'>
     <Swiper
       modules={[Navigation, Autoplay, Pagination]}
-        spaceBetween={20} // Espacio entre diapositivas
-        slidesPerView={1.3} // Número de diapositivas visibles
       centeredSlides={true} // Centra la diapositiva activa
       navigation={{
         nextEl: '.swiper-button-next',
@@ -28,11 +26,23 @@ const SwiperCarousel = () => {
         el: '.swiper-pagination',
         type: 'bullets',
       }}
-      className="h-[350px] relative"
+      breakpoints={
+        {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+          },
+        }
+      }
+      className="h-[500px] md:h-[350px] relative"
     >
       <SwiperSlide>
-        <div className='flex h-full text-white'>
-            <div className="bg-gray-500 h-full w-3/4"></div>
+        <div className='flex max-md:flex-col h-full text-white'>
+            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
             <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
                 <h4 className='font-semibold text-4xl'>Slide 1</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
@@ -43,8 +53,8 @@ const SwiperCarousel = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='flex h-full text-white'>
-            <div className="bg-gray-500 h-full w-3/4"></div>
+        <div className='flex max-md:flex-col h-full text-white'>
+            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
             <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
                 <h4 className='font-semibold text-4xl'>Slide 2</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
@@ -55,8 +65,8 @@ const SwiperCarousel = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='flex h-full text-white'>
-            <div className="bg-gray-500 h-full w-3/4"></div>
+        <div className='flex max-md:flex-col h-full text-white'>
+            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
             <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
                 <h4 className='font-semibold text-4xl'>Slide 3</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
@@ -67,8 +77,8 @@ const SwiperCarousel = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='flex h-full text-white'>
-            <div className="bg-gray-500 h-full w-3/4"></div>
+        <div className='flex max-md:flex-col h-full text-white'>
+            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
             <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
                 <h4 className='font-semibold text-4xl'>Slide 4</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
