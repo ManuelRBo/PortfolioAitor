@@ -4,6 +4,16 @@
     color: black;
 }
 
+@media(max-width: 500px){
+    .swiper-button-next{
+        display: none;
+    }
+
+    .swiper-button-prev{
+        display: none;
+    }
+}
+
 .swiper-button-prev{
     position: absolute;
     left: -50px;
@@ -20,4 +30,5 @@
 .swiper-pagination-bullet-active{
     background-color: black;
 }
+
   
