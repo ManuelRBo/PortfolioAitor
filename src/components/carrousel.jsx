@@ -38,7 +38,7 @@ const SwiperCarousel = () => {
           },
         }
       }
-      className="h-[600px] md:h-[350px] relative"
+      className="h-[620px] md:h-[350px] relative"
     >
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
