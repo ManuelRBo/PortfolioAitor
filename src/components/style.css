@@ -1,16 +1,23 @@
 .swiper-button-next{
     position: absolute;
     right: -50px;
+    color: black;
 }
 
 .swiper-button-prev{
     position: absolute;
     left: -50px;
+    color: black;
 }
 
 /* Estilos para el contenedor de paginación */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute; /* Posición absoluta */
     bottom: -20px; /* Ajusta la posición vertical según sea necesario */
+
   }
+
+.swiper-pagination-bullet-active{
+    background-color: black;
+}
   
