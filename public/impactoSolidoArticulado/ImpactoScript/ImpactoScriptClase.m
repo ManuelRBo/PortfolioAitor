@@ -72,7 +72,7 @@ x0  = 0.4; % [m]
 % Las condiciones iniciales particulares de cada grupo se asignan según
 % los números de expediente de los miembros.
 % Dichos números de expediente pueden introducirse por filas en el
-% siguiente vector columna. 
+% siguiente vector columna.
 num_exp =   [   170229
                 190499
                 190235
@@ -100,7 +100,7 @@ end
 % posición según el eje Oz
 z0 = -0.3 - i3*0.03; % [m]
 
-% Masa del bloque 
+% Masa del bloque
 M = 25 + i3 ; % [kg]
 
 % Ancho del bloque
@@ -127,7 +127,7 @@ fprintf('Bloque:\nMasa = %12.9f\na = %12.9f\nb = %12.9f\nc = %12.9f\nEsfera:\nMa
 % Introducir los valores anteriores en la GUI del simulador y ejecutarla.
 % Una vez finalizada, exportar el fichero de datos con los valores
 % obtenidos.
-SIM_Impacto;
+%SIM_Impacto;
 
 
 %%
@@ -163,7 +163,7 @@ t  = datastruct.data(:,1);
  % Matriz posición esfera, columnas 2 a 4 de datastruct
 rs = datastruct.data(:,2:4);
 
- % Matriz velocidad esfera, cols. 5 a 7 
+ % Matriz velocidad esfera, cols. 5 a 7
 vs = datastruct.data(:,5:7);
 
  % Matriz angulos Euler, cols 8 a 19
@@ -239,7 +239,7 @@ wd(i) = omega(kimpacto+1,i)+ (( omega(kimpacto+2,i)-omega(kimpacto+1,i) ) /   ..
        ( t(kimpacto+2)-t(kimpacto+1) )) * (tI-t(kimpacto+1));
 end
 disp(wd);%TABLA1
-% 
+%
 % Calculamos la velocidad angular en tI
 menosP = m .* (vs(kimpacto+1,:)-vs(kimpacto,:));
 % El punto del bloque que recibe el impacto
@@ -282,7 +282,7 @@ HOd = wd * IO ; % orden distinto que abajo, wd es matriz fila
 % se pierde una dimensión. Suponemos P= [Px 0 0 ] y comprobamos
 % el error:
 
-Px1 = HOd(2) / rQ(3); 
+Px1 = HOd(2) / rQ(3);
 
 Px2 = - HOd(3) / rQ(2);
 
@@ -350,17 +350,17 @@ for i=1:length(t)
     Qpsi(1:3,1:3,i) = [ cos(Euler(i,1))     -sin(Euler(i,1))    0
                         sin(Euler(i,1))     cos(Euler(i,1))     0
                         0                   0                   1  ]; %#ok<SAGROW>
-    
+
     Qtheta(1:3,1:3,i) = [ 1      0                  0
                           0      cos(Euler(i,2))     -sin(Euler(i,2))
                           0      sin(Euler(i,2))     cos(Euler(i,2))  ]; %#ok<SAGROW>
-    
+
     Qphi(1:3,1:3,i) = [ cos(Euler(i,3))     -sin(Euler(i,3))    0
                         sin(Euler(i,3))     cos(Euler(i,3))     0
                         0                   0                   1  ]; %#ok<SAGROW>
-    
+
     Q10(1:3,1:3,i) = Qpsi(1:3,1:3,i)*Qtheta(1:3,1:3,i)*Qphi(1:3,1:3,i); %#ok<SAGROW>
-    
+
 end
 
 % Se han calculado las matrices de giro para todos los instantes, y se
@@ -376,8 +376,8 @@ fprintf('Q(%d)=[ \n %10.9f, %10.9f, %10.9f \n %10.9f, %10.9f, %10.9f \n %10.9f, 
 %si busco la matriz de giro en el primer momento después del choque, veo
 %el t en que vx de la bola cambia de signo:
 for i=2:length(t)
-   if(vs(i,1)>0 && vs(i-1,1)<0) 
-       valorn=i; 
+   if(vs(i,1)>0 && vs(i-1,1)<0)
+       valorn=i;
        break
    end
 end
@@ -387,7 +387,7 @@ fprintf('Q(%d)=[ \n %10.9f, %10.9f, %10.9f \n %10.9f, %10.9f, %10.9f \n %10.9f, 
    valorn, Q10(1,1,valorn), ...
         Q10(1,2,valorn), Q10(1,3,valorn),Q10(2,1,valorn),Q10(2,2,valorn),Q10(2,3,valorn), ...
         Q10(3,1,valorn),Q10(3,2,valorn),Q10(3,3,valorn) );
-     
+
 
 %Para hallar el máximo de theta, se podría hacer:
 for i=2:length(t)
@@ -423,7 +423,7 @@ for i=1:size(omega,1)
     HO1(i,1:3) = Q10(:,:,i)*HO(i,:)';   %HO en ejes inerciales
 end
 % Vemos si se conserva el módulo
-ModHO  = sqrt( sum(HO.^2, 2) ); % para cada vector HO, calculamos 
+ModHO  = sqrt( sum(HO.^2, 2) ); % para cada vector HO, calculamos
 % el módulo sumando los cuadrados de la dimensión 2 (x,y,z)
 ModHO1 = sqrt( sum(HO1.^2, 2) ); % lo mismo en ejes fijos
 % Se comprueba si el módulo de LO ha permanecido invariante ante rotaciones
@@ -434,7 +434,7 @@ else
 end
 % plot (t, ModHO-ModHO1)
 
-% Se dibuja el momento cinético. 
+% Se dibuja el momento cinético.
 
 figure
 plot( t, HO );
@@ -452,7 +452,7 @@ title('HO_x, HO_y, HO_z, |HO|');
 %veamos la componente z sola, para apreciar si es constante,
 %pero solo después de la percusión
 % dHO = diff(HO(kimpacto+4:end,3));
-figure 
+figure
 plot( t(kimpacto+5:end), HO(kimpacto+5:end,3) );
 hold on
 % plot (t(kimpacto+5:end),dHO );
@@ -472,16 +472,16 @@ xlabel('tiempo (s)');
 ylabel('HO_x1,HO_y1,HO_z1');
 title('Momento cinético en ejes fijos');
 
-% 
-% H_z_1 parece constante, pero junto con las otras no 
+%
+% H_z_1 parece constante, pero junto con las otras no
 % se ve bien. La pintamos sola, para ver las variaciones:
 
-figure 
+figure
 plot( t(kimpacto+1:end), HO1(kimpacto+1:end,3) )
 legend({'HO_{z_1}'})
 grid on;
 xlabel('tiempo [s]');
-ylabel('HO1_z');  
+ylabel('HO1_z');
 title('Componente z del momento cinetico en ejes fijos');
 
 %calcular el vector k1 proyectado en ejes cuerpo
@@ -500,15 +500,15 @@ end
 % for i=1:259
 %     AAA (i) = (b-a)*omega(i,1)*omegayy(i);
 %     BB = c*diff(omega(:,3));
-%     
+%
 %     CCC(i) = AAA(i) + BB(i);
-%     
-%     
+%
+%
 % end
-% %debería salir 0 
+% %debería salir 0
 % plot(t(1:259),CCC)
 
-   
+
 figure
 plot (t(kimpacto+1:end) ,HOz(kimpacto+1:end))
 legend ('HOz')
@@ -523,7 +523,7 @@ for i=1:size(t)
     Pot(i) = -M*g*c/2*cos(Euler(i,2));
     EnT(i) = EnC(i)+Pot(i);
 end
-    
+
 %plot T
 figure
 plot(t,EnC(:),t,Pot(:),t,EnT(:))
@@ -544,8 +544,8 @@ grid on;
 xlabel('tiempo [s]');
 ylabel('Energía [J]');
 title('Energía Mecánica');
-    
 
 
-    
-    
+
+
+
