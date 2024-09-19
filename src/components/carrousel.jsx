@@ -32,21 +32,21 @@ const SwiperCarousel = () => {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 1.3,
+          1024: {
+            slidesPerView: 1.2,
             spaceBetween: 20,
           },
         }
       }
-      className="h-[500px] md:h-[350px] relative"
+      className="h-[600px] md:h-[350px] relative"
     >
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
-            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
-            <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
-                <h4 className='font-semibold text-3xl max-w-[25ch]'>Simulacion Problema de los Dos Cuerpos</h4>
+        <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>   
+                <h4 className='font-semibold text-2xl max-w-[25ch]'>Simulacion Problema de los Dos Cuerpos</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='absolute bottom-10 right-14 flex gap-7'>
+                <div className='flex flex-wrap gap-4'>
                 <a href='/problemaDosCuerpos/informeDosCuerpos.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
                     Ver Informe
                 </a>
@@ -63,11 +63,11 @@ const SwiperCarousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
-            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
-            <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
-            <h4 className='font-semibold text-3xl max-w-[25ch]'>Simulación Impacto Sobre un Sólido Articulado</h4>
+        <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-2xl max-w-[25ch]'>Simulación Impacto Sobre un Sólido Articulado</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-            <div className='absolute bottom-10 right-14 flex gap-7'>
+            <div className='flex flex-wrap gap-4'>
                 <a href='/impactoSolidoArticulado/informeImpacto.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
                     Ver Informe
                 </a>
@@ -84,11 +84,11 @@ const SwiperCarousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
-            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
-            <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
-            <h4 className='font-semibold text-3xl max-w-[25ch]'>Diseño y Fabricación Perfil Aerodinámico</h4>
+        <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-2xl max-w-[25ch]'>Diseño y Fabricación Perfil Aerodinámico</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='absolute bottom-10 right-14 flex gap-7'>
+                <div className='flex flex-wrap gap-4'>
                 <a href='/diseñoFabricacion/diseñoFabricacionPerfilAereo.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
                     Ver Informe
                 </a>
@@ -98,11 +98,11 @@ const SwiperCarousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
-            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
-            <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
-            <h4 className='font-semibold text-3xl max-w-[25ch]'>Estudio Completo Actuaciones A220-100</h4>
+        <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-2xl max-w-[25ch]'>Estudio Completo Actuaciones A220-100</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='absolute bottom-10 right-14 flex gap-7'>
+                <div className='flex flex-wrap gap-4'>
                 <a href='/estudioActuaciones/informeActuacionesBasicas.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
                     Ver Informe 1
                 </a>
@@ -118,11 +118,11 @@ const SwiperCarousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
-            <div className="bg-gray-500 w-full h-3/4 md:h-full md:w-3/4"></div>
-            <div className='bg-black h-full flex-grow p-7 flex flex-col gap-5 relative'>
-            <h4 className='font-semibold text-3xl max-w-[25ch]'>Previsión Tráfico Aéreo MAD</h4>
+        <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-2xl max-w-[25ch]'>Previsión Tráfico Aéreo MAD</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='absolute bottom-10 right-14 flex gap-7'>
+                <div className='flex flex-wrap gap-4'>
                 <a href='/previsionesTraficoAereo/informeTraficoAereo.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
                     Ver Informe
                 </a>
