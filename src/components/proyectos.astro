@@ -2,10 +2,10 @@
 import SwiperCarousel from './carrousel.jsx';
 ---
 
-<section class="h-svh grid place-items-center relative snap-start">
-    <img src="/flecha.svg" alt="flecha" class="sm:absolute sm:top-7 left-[50%] sm:-translate-x-[50%] rotate-180 w-12 md:w-20"/>
-    <div class="lg:max-w-[1000px] max-w-xs md:max-w-2xl xl:max-w-[1200px] self-start">
-        <h3 class="md:text-5xl text-4xl font-semibold text-center mb-5">Proyectos</h3>
+<section class="h-svh grid place-items-center md:grid-rows-4 snap-start">
+    <img src="/flecha.svg" alt="flecha" class="rotate-180 w-12 md:w-20 md:self-start md:relative md:top-5"/>
+    <div class="lg:max-w-[1000px] max-w-xs md:max-w-lg xl:max-w-[1100px] md:self-start">
+        <h3 class="md:text-5xl text-4xl font-semibold text-center mb-5 md:mb-7">Proyectos</h3>
             <SwiperCarousel client:load />
     </div>
 </section>
