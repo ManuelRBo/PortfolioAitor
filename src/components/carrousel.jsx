@@ -38,24 +38,24 @@ const SwiperCarousel = () => {
           },
         }
       }
-      className="h-[620px] md:h-[350px] relative"
+      className="h-[500px] md:h-[350px] relative"
     >
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
         <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
-        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>   
-                <h4 className='font-semibold text-2xl max-w-[25ch]'>Simulacion Problema de los Dos Cuerpos</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='flex flex-wrap gap-4'>
-                <a href='/problemaDosCuerpos/informeDosCuerpos.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-2 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>   
+                <h4 className='font-semibold text-xl max-w-[25ch]'>Simulacion Problema de los Dos Cuerpos</h4>
+                <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
+                <div className='flex flex-wrap gap-4 mt-2'>
+                <a href='/problemaDosCuerpos/informeDosCuerpos.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md text-sm'>
                     Ver Informe
                 </a>
-                <a className='border-white border px-3 py-2 rounded-md'>
+                <a className='border-white border px-3 py-2 rounded-md text-sm'>
                   Ver Graficas
                 </a>
-                <a href='/problemaDosCuerpos/DosCuerposScriptClase.m' download className='border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2'>
+                <a href='/problemaDosCuerpos/DosCuerposScriptClase.m' download className='border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 text-sm'>
                   <p>Script</p>
-                  <img src="/download.svg" alt="download" width={15}/>
+                  <img src="/download.svg" alt="download" width={13}/>
                 </a>
                 </div>
             </div>
@@ -64,19 +64,19 @@ const SwiperCarousel = () => {
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
         <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
-        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
-            <h4 className='font-semibold text-2xl max-w-[25ch]'>Simulación Impacto Sobre un Sólido Articulado</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-            <div className='flex flex-wrap gap-4'>
-                <a href='/impactoSolidoArticulado/informeImpacto.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-2 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-xl max-w-[25ch]'>Simulación Impacto Sobre un Sólido Articulado</h4>
+            <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
+            <div className='flex flex-wrap gap-4 mt-2'>
+                <a href='/impactoSolidoArticulado/informeImpacto.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md text-sm'>
                     Ver Informe
                 </a>
-                <a className='border-white border px-3 py-2 rounded-md'>
+                <a className='border-white border px-3 py-2 rounded-md text-sm'>
                   Ver Graficas
                 </a>
-                <a href='/impactoSolidoArticulado/ImpactoScriptClase.m' download className='border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2'>
+                <a href='/impactoSolidoArticulado/ImpactoScriptClase.m' download className='border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 text-sm'>
                   <p>Script</p>
-                  <img src="/download.svg" alt="download" width={15}/>
+                  <img src="/download.svg" alt="download" width={13}/>
                 </a>
                 </div>
             </div>
@@ -85,11 +85,11 @@ const SwiperCarousel = () => {
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
         <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
-        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
-            <h4 className='font-semibold text-2xl max-w-[25ch]'>Diseño y Fabricación Perfil Aerodinámico</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='flex flex-wrap gap-4'>
-                <a href='/diseñoFabricacion/diseñoFabricacionPerfilAereo.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-2 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-xl max-w-[25ch]'>Diseño y Fabricación Perfil Aerodinámico</h4>
+                <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
+                <div className='flex flex-wrap gap-4 mt-2'>
+                <a href='/diseñoFabricacion/diseñoFabricacionPerfilAereo.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md text-sm'>
                     Ver Informe
                 </a>
                 </div>
@@ -99,17 +99,17 @@ const SwiperCarousel = () => {
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
         <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
-        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
-            <h4 className='font-semibold text-2xl max-w-[25ch]'>Estudio Completo Actuaciones A220-100</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='flex flex-wrap gap-4'>
-                <a href='/estudioActuaciones/informeActuacionesBasicas.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-2 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-xl max-w-[25ch]'>Estudio Completo Actuaciones A220-100</h4>
+                <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
+                <div className='flex flex-wrap gap-4 mt-2'>
+                <a href='/estudioActuaciones/informeActuacionesBasicas.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md text-sm'>
                     Ver Informe 1
                 </a>
-                <a href='/estudioActuaciones/informeCarreraTof.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
+                <a href='/estudioActuaciones/informeCarreraTof.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md text-sm'>
                     Ver Informe 2
                 </a>
-                <a href='/estudioActuaciones/informeAlasEstabilidad.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
+                <a href='/estudioActuaciones/informeAlasEstabilidad.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md text-sm'>
                     Ver Informe 3
                 </a>
                 </div>
@@ -119,11 +119,11 @@ const SwiperCarousel = () => {
       <SwiperSlide>
         <div className='flex max-md:flex-col h-full text-white'>
         <div className="bg-gray-500 w-full h-2/5 md:h-full md:w-2/4"></div>
-        <div className='bg-black h-3/5 p-5 flex flex-col gap-5 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
-            <h4 className='font-semibold text-2xl max-w-[25ch]'>Previsión Tráfico Aéreo MAD</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
-                <div className='flex flex-wrap gap-4'>
-                <a href='/previsionesTraficoAereo/informeTraficoAereo.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md'>
+        <div className='bg-black h-3/5 p-5 flex flex-col gap-2 md:h-full md:w-2/4 lg:gap-7 xl:p-7'>
+            <h4 className='font-semibold text-xl max-w-[25ch]'>Previsión Tráfico Aéreo MAD</h4>
+                <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis convallis dolor. Nam vitae libero a sapien fringilla viverra eu non ligula. </p>
+                <div className='flex flex-wrap gap-4 mt-2'>
+                <a href='/previsionesTraficoAereo/informeTraficoAereo.pdf' target='_blank' className='border-white border px-3 py-2 rounded-md text-sm'>
                     Ver Informe
                 </a>
                 </div>
