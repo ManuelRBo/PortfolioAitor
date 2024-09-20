@@ -23,7 +23,7 @@
 /* Estilos para el contenedor de paginación */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute; /* Posición absoluta */
-    bottom: -20px; /* Ajusta la posición vertical según sea necesario */
+    bottom: -30px; /* Ajusta la posición vertical según sea necesario */
 
   }
 
