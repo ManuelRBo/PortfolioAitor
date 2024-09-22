@@ -65,6 +65,7 @@ const SwiperCarousel = () => {
                 <p>Script</p>
                 <svg
                   width="13"
+                  height={15}
                   viewBox="0 0 33 38"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,6 +117,7 @@ const SwiperCarousel = () => {
                 <p>Script</p>
                 <svg
                   width="13"
+                  height={15}
                   viewBox="0 0 33 38"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -215,13 +217,14 @@ const SwiperCarousel = () => {
                 Ver Informe
               </a>
               <a
-                href="/previsionesTraficoAereo/traficoAereoTD.xlsx"
+                href="/previsionesTraficoAereo/traficoAereoExcel.zip"
                 download
                 className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 hover:text-black hover:bg-white hover:stroke-black transition-colors stroke-white"
               >
                 <p>Excel</p>
                 <svg
                   width="13"
+                  height={15}
                   viewBox="0 0 33 38"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
