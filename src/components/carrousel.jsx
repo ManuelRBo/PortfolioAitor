@@ -214,6 +214,32 @@ const SwiperCarousel = () => {
               >
                 Ver Informe
               </a>
+              <a
+                href="/previsionesTraficoAereo/traficoAereoTD.xlsx"
+                download
+                className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 hover:text-black hover:bg-white hover:stroke-black transition-colors stroke-white"
+              >
+                <p>Excel</p>
+                <svg
+                  width="13"
+                  viewBox="0 0 33 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 21.8333L16.1667 36L30.3333 21.8333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.1666 2V36"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </SwiperSlide>
