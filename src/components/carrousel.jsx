@@ -30,7 +30,7 @@ const SwiperCarousel = () => {
         breakpoints={{
           640: {
             slidesPerView: 2,
-            spaceBetween: 10 ,
+            spaceBetween: 10,
             centeredSlides: false,
           },
         }}
@@ -46,139 +46,175 @@ const SwiperCarousel = () => {
               convallis dolor. Nam vitae libero a sapien fringilla viverra eu
               non ligula.{" "}
             </p>
-            <div className="flex flex-wrap gap-4 mt-2">
+            <div className="flex flex-wrap gap-4 mt-2 lg:absolute lg:bottom-10 lg:right-10">
               <a
                 href="/problemaDosCuerpos/informeDosCuerpos.pdf"
                 target="_blank"
-                className="border-white border px-3 py-2 rounded-md"
+                className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors"
               >
                 Ver Informe
               </a>
-              <a className="border-white border px-3 py-2 rounded-md">
+              <a className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors">
                 Ver Graficas
               </a>
               <a
                 href="/problemaDosCuerpos/DosCuerposScriptClase.m"
                 download
-                className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2"
+                className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 hover:text-black hover:bg-white hover:stroke-black transition-colors stroke-white"
               >
                 <p>Script</p>
-                <img src="/download.svg" alt="download" width={13} />
+                <svg
+                  width="13"
+                  viewBox="0 0 33 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 21.8333L16.1667 36L30.3333 21.8333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.1666 2V36"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
-          <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
-            Simulación Impacto Sobre un Sólido Articulado
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
-            convallis dolor. Nam vitae libero a sapien fringilla viverra eu non
-            ligula.{" "}
-          </p>
-          <div className="flex flex-wrap gap-4 mt-2">
-            <a
-              href="/impactoSolidoArticulado/informeImpacto.pdf"
-              target="_blank"
-              className="border-white border px-3 py-2 rounded-md"
-            >
-              Ver Informe
-            </a>
-            <a className="border-white border px-3 py-2 rounded-md">
-              Ver Graficas
-            </a>
-            <a
-              href="/impactoSolidoArticulado/ImpactoScriptClase.m"
-              download
-              className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2"
-            >
-              <p>Script</p>
-              <img src="/download.svg" alt="download" width={13} />
-            </a>
-          </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-        <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
-          <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
-            Diseño y Fabricación Perfil Aerodinámico
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
-            convallis dolor. Nam vitae libero a sapien fringilla viverra eu non
-            ligula.{" "}
-          </p>
-          <div className="flex flex-wrap gap-4 mt-2">
-            <a
-              href="/diseñoFabricacion/diseñoFabricacionPerfilAereo.pdf"
-              target="_blank"
-              className="border-white border px-3 py-2 rounded-md"
-            >
-              Ver Informe
-            </a>
-          </div>
+          <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
+            <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
+              Simulación Impacto Sobre un Sólido Articulado
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
+              convallis dolor. Nam vitae libero a sapien fringilla viverra eu
+              non ligula.{" "}
+            </p>
+            <div className="flex flex-wrap gap-4 mt-2 lg:absolute lg:bottom-10 lg:right-10">
+              <a
+                href="/impactoSolidoArticulado/informeImpacto.pdf"
+                target="_blank"
+                className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors"
+              >
+                Ver Informe
+              </a>
+              <a className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors">
+                Ver Graficas
+              </a>
+              <a
+                href="/impactoSolidoArticulado/ImpactoScriptClase.m"
+                download
+                className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 hover:text-black hover:bg-white hover:stroke-black transition-colors stroke-white"
+              >
+                <p>Script</p>
+                <svg
+                  width="13"
+                  viewBox="0 0 33 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 21.8333L16.1667 36L30.3333 21.8333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.1666 2V36"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
-          <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
-            Estudio Completo Actuaciones A220-100
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
-            convallis dolor. Nam vitae libero a sapien fringilla viverra eu non
-            ligula.{" "}
-          </p>
-          <div className="flex flex-wrap gap-4 mt-2">
-            <a
-              href="/estudioActuaciones/informeActuacionesBasicas.pdf"
-              target="_blank"
-              className="border-white border px-3 py-2 rounded-md"
-            >
-              Ver Informe 1
-            </a>
-            <a
-              href="/estudioActuaciones/informeCarreraTof.pdf"
-              target="_blank"
-              className="border-white border px-3 py-2 rounded-md"
-            >
-              Ver Informe 2
-            </a>
-            <a
-              href="/estudioActuaciones/informeAlasEstabilidad.pdf"
-              target="_blank"
-              className="border-white border px-3 py-2 rounded-md"
-            >
-              Ver Informe 3
-            </a>
-          </div>
+          <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
+            <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
+              Diseño y Fabricación Perfil Aerodinámico
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
+              convallis dolor. Nam vitae libero a sapien fringilla viverra eu
+              non ligula.{" "}
+            </p>
+            <div className="flex flex-wrap gap-4 mt-2 lg:absolute lg:bottom-10 lg:right-10">
+              <a
+                href="/diseñoFabricacion/diseñoFabricacionPerfilAereo.pdf"
+                target="_blank"
+                className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors"
+              >
+                Ver Informe
+              </a>
+            </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
-          <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
-            Previsión Tráfico Aéreo MAD
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
-            convallis dolor. Nam vitae libero a sapien fringilla viverra eu non
-            ligula.{" "}
-          </p>
-          <div className="flex flex-wrap gap-4 mt-2">
-            <a
-              href="/previsionesTraficoAereo/informeTraficoAereo.pdf"
-              target="_blank"
-              className="border-white border px-3 py-2 rounded-md"
-            >
-              Ver Informe
-            </a>
+          <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
+            <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
+              Estudio Completo Actuaciones A220-100
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
+              convallis dolor. Nam vitae libero a sapien fringilla viverra eu
+              non ligula.{" "}
+            </p>
+            <div className="flex flex-wrap gap-4 mt-2 lg:absolute lg:bottom-10 lg:right-10">
+              <a
+                href="/estudioActuaciones/informeActuacionesBasicas.pdf"
+                target="_blank"
+                className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors"
+              >
+                Ver Informe 1
+              </a>
+              <a
+                href="/estudioActuaciones/informeCarreraTof.pdf"
+                target="_blank"
+                className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors"
+              >
+                Ver Informe 2
+              </a>
+              <a
+                href="/estudioActuaciones/informeAlasEstabilidad.pdf"
+                target="_blank"
+                className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors"
+              >
+                Ver Informe 3
+              </a>
+            </div>
           </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="bg-black/90 text-white p-7 flex flex-col h-[380px]  gap-4 lg:gap-7 rounded-xl">
+            <h4 className="font-semibold text-xl text-center md:text-2xl lg:text-3xl">
+              Previsión Tráfico Aéreo MAD
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
+              convallis dolor. Nam vitae libero a sapien fringilla viverra eu
+              non ligula.{" "}
+            </p>
+            <div className="flex flex-wrap gap-4 mt-2 lg:absolute lg:bottom-10 lg:right-10">
+              <a
+                href="/previsionesTraficoAereo/informeTraficoAereo.pdf"
+                target="_blank"
+                className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors"
+              >
+                Ver Informe
+              </a>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
