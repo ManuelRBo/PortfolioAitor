@@ -4,9 +4,32 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./style.css";
+import { useState } from "react"
+import Galeria from "./galeria";
+import { graficas1, graficas2 } from "./graficas";
 
 const SwiperCarousel = () => {
+
+  const [galeria, setGaleria] = useState({
+    open: false,
+    graficas: null
+  });
+
+  const openGaleria = (graficas) => {
+    setGaleria({
+      open: true,
+      graficas: graficas
+    });
+
+  }
+
+  const closeGaleria = () => {
+    setGaleria(false);
+  }
+
   return (
+    <>
+    {galeria.open && <Galeria closeGaleria={closeGaleria} graficas={galeria.graficas}/>}
     <div className="relative swiper-container">
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
@@ -54,11 +77,11 @@ const SwiperCarousel = () => {
               >
                 Ver Informe
               </a>
-              <a className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors">
+              <button className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors" onClick={() => openGaleria(graficas1)}>
                 Ver Graficas
-              </a>
+              </button>
               <a
-                href="/problemaDosCuerpos/DosCuerposScriptClase.m"
+                href="/problemaDosCuerpos/DosCuerposScript.zip"
                 download
                 className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 hover:text-black hover:bg-white hover:stroke-black transition-colors stroke-white"
               >
@@ -106,11 +129,11 @@ const SwiperCarousel = () => {
               >
                 Ver Informe
               </a>
-              <a className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors">
+              <a className="border-white border px-3 py-2 rounded-md hover:text-black hover:bg-white transition-colors" onClick={()=>openGaleria(graficas2)}>
                 Ver Graficas
               </a>
               <a
-                href="/impactoSolidoArticulado/ImpactoScriptClase.m"
+                href="/impactoSolidoArticulado/ImpactoScript.zip"
                 download
                 className="border-white border px-3 py-2 rounded-md flex items-center justify-center gap-2 hover:text-black hover:bg-white hover:stroke-black transition-colors stroke-white"
               >
@@ -251,6 +274,7 @@ const SwiperCarousel = () => {
       <div className="swiper-button-prev"></div>
       <div className="swiper-pagination"></div>
     </div>
+    </>
   );
 };
 

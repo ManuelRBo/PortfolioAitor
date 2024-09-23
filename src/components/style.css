@@ -2,6 +2,7 @@
     position: absolute;
     right: -50px;
     color: black;
+    z-index: 1;
 }
 
 @media(max-width: 500px){
@@ -18,17 +19,26 @@
     position: absolute;
     left: -50px;
     color: black;
+    z-index: 1;
 }
 
 /* Estilos para el contenedor de paginación */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute; /* Posición absoluta */
     bottom: -30px; /* Ajusta la posición vertical según sea necesario */
+    z-index: 1;
 
   }
 
 .swiper-pagination-bullet-active{
     background-color: black;
 }
+
+.galeria-pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
   
