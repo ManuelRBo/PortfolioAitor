@@ -1,11 +1,10 @@
 ---
-import SwiperCarousel from '../components/carrousel';
-import Layout from '../layouts/Layout.astro';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import SwiperCarousel from '../../components/carrousel';
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 ---
 
 <Layout title="Aitor Lopez">
