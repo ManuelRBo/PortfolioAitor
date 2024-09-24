@@ -9,7 +9,7 @@ export const showDefaultLang = false;
 
 export const ui = {
     es: {
-        'intro.titulo': 'Soy Aitor Lopez',
+        'intro.titulo': 'Aitor Lopez',
         'intro.subtitulo': 'Ingeniero Aereoespacial Junior',
         'sobremi.titulo': 'Sobre mi',
         'sobremi.descSpan': '¡Buenas! Soy Aitor,',
@@ -17,7 +17,7 @@ export const ui = {
         'proyectos.titulo': 'Proyectos',
     },
     en: {
-        'intro.titulo': 'I am Aitor Lopez',
+        'intro.titulo': 'Aitor Lopez',
         'intro.subtitulo': 'Junior Aerospace Engineer',
         'sobremi.titulo': 'About me',
         'sobremi.descSpan': 'Hello! I am Aitor,',

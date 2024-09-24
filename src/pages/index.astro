@@ -11,7 +11,7 @@ const t = useTranslations(lang);
 <Layout title="Aitor Lopez">
 	<section class="h-svh grid place-items-center relative snap-start">
 		<div class="flex flex-col items-center gap-3 md:gap-5 text-center self-end">
-			<h1 class="md:text-7xl text-5xl font-medium">{t('intro.titulo')}</h1>
+			<h1 class="md:text-7xl text-5xl font-medium bg-gradient-to-r from-teal-400 to-teal-700 bg-clip-text text-transparent">{t('intro.titulo')}</h1>
 			<h2 class="md:text-5xl text-2xl font-light mb-4">{t('intro.subtitulo')}</h2>
 			<div class="flex gap-8 mb-6">
 				<a href="#" class="hover:scale-110 transition-transform">
@@ -51,10 +51,10 @@ const t = useTranslations(lang);
 		<img src="/planeBajar.svg" alt="flecha" class="w-14 md:w-20 self-end relative bottom-2 animate-bounce"/>
 	  </section>
 	  <section class="h-svh grid place-items-center md:grid-rows-4 snap-start">
-		<img src="/plane.svg" alt="flecha" class="rotate-[-45deg] w-12 md:w-16 self-start relative top-10 opacity-0"/>
+		<img src="/planeSubir.svg" alt="flecha" class="rotate-[-45deg] w-12 md:w-16 self-start relative top-10 opacity-0"/>
 		<div class="lg:max-w-[1000px] max-w-xs md:max-w-[650px] xl:max-w-[1100px] self-start">
 			<h3 class="md:text-5xl text-4xl font-semibold text-center mb-5 md:mb-7">{t('proyectos.titulo')}</h3>
-				<SwiperCarousel client:load />
+				<SwiperCarousel client:visible />
 		</div>
 	</section>
 </Layout>
