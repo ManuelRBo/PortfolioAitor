@@ -8,7 +8,7 @@ import "./style.css";
 const Galeria = ({closeGaleria, graficas}) => {
   return (
     <>
-      <div className="bg-gray-100/95 w-full h-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-10"></div>
+      <div className="bg-gray-100/95 w-full h-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-20"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"

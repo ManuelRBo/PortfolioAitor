@@ -6,7 +6,6 @@ interface Props {
 const { title } = Astro.props;
 
 import { fade, ViewTransitions } from 'astro:transitions';
-import LanguagePicker from '../components/LanguagePicker.astro';
 import { getLangFromUrl } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -24,9 +23,6 @@ const lang = getLangFromUrl(Astro.url);
 		<ViewTransitions />
 	</head>
 	<body class="bg-[#F9F8F6]">
-		<header class="absolute z-[10] right-10 top-10">
-			<LanguagePicker />
-		</header>
 		<div class="snap-y snap-mandatory h-svh overflow-y-scroll scroll-smooth" transition:animate="fade">
 			<slot />
 		</div>
