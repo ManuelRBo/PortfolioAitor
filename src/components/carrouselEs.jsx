@@ -56,7 +56,7 @@ const SwiperCarouselEs = () => {
               spaceBetween: 10,
             },
           }}
-          className="relative shadow-xl shadow-black/50 rounded-xl bg-gradient-to-b from-white to-black/65"
+          className="relative shadow-xl shadow-black/50 bg-gradient-to-b from-white to-black/65 rounded-xl"
         >
           <SwiperSlide>
             <div className="bg-black/90 text-white p-6 h-[500px] lg:h-[380px] flex flex-col gap-4 rounded-xl">

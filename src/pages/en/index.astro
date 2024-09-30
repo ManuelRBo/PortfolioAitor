@@ -1,11 +1,12 @@
 ---
-import SwiperCarouselEn from '../../components/carrouselEn';
 import Layout from '../../layouts/Layout.astro';
 import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 import LanguagePicker from '../../components/LanguagePicker.astro';
+import SwiperCarouselEn from '../../components/carrouselEn';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
 ---
 
 <Layout title="Aitor Lopez">
@@ -14,24 +15,24 @@ const t = useTranslations(lang);
 			<LanguagePicker />
 		</header>
 		<div class="flex flex-col items-center gap-3 md:gap-5 text-center self-end">
-			<h1 class="md:text-7xl text-5xl font-medium bg-gradient-to-r from-green-700 to-green-900 bg-clip-text text-transparent">{t('intro.titulo')}</h1>
-			<h2 class="md:text-5xl text-2xl font-light mb-4">{t('intro.subtitulo')}</h2>
+			<h1 class="md:text-6xl text-5xl font-medium bg-gradient-to-r from-green-700 to-green-900 bg-clip-text text-transparent">{t('intro.titulo')}</h1>
+			<h2 class="md:text-4xl text-2xl font-light mb-4">{t('intro.subtitulo')}</h2>
 			<div class="flex gap-8 mb-6">
 				<a href="#" class="hover:scale-110 transition-transform">
-					<img src="/linkedin.svg" alt="linkedin" class="w-8 md:w-10"/>
+					<img src="/linkedin.svg" alt="linkedin" class="w-8"/>
 				</a>
 				<a href="#" class="hover:scale-110 transition-transform">
-					<img src="/github.svg" alt="github" class="w-8 md:w-10"/>
+					<img src="/github.svg" alt="github" class="w-8"/>
 				</a>
 				<a href="#" class="hover:scale-110 transition-transform">
-					<img src="/instagram.svg" alt="instagram" class="w-8 md:w-10"/>
+					<img src="/instagram.svg" alt="instagram" class="w-8"/>
 				</a>
 				<a href="#" class="hover:scale-110 transition-transform">
-					<img src="/email.svg" alt="email" class="w-8 md:w-10"/>
+					<img src="/email.svg" alt="email" class="w-8"/>
 				</a>
 			</div>
-			<div class="bg-gradient-to-b from-[#355326] to-[#76B955] text-white w-24 md:w-28 rounded-xl hover:scale-110 transition-transform">
-				<button class="w-full flex justify-around items-center text-lg md:text-2xl font-semibold py-3 px-3">CV<img src="/download.svg" alt="download" class="w-4 md:w-6"></button>
+			<div class="bg-gradient-to-b from-[#355326] to-[#76B955] text-white w-24 rounded-lg hover:scale-110 transition-transform">
+				<button class="w-full flex justify-around items-center text-lg md:text-xl py-2 px-3">CV<img src="/download.svg" alt="download" class="w-4"></button>
 			</div>
 		</div>
 		<img src="/planeBajar.svg" alt="flecha" class="w-14 md:w-20 self-end relative bottom-2 animate-bounce"/>
@@ -40,11 +41,11 @@ const t = useTranslations(lang);
 		<img
 		  src="/planeSubir.svg"
 		  alt="flecha"
-		  class="w-14 md:w-20 md:self-start relative top-10 opacity-0"
+		  class="w-14 md:w-20 md:self-start relative top-10 hidden"
 		/>
 		<div class="max-w-7xl w-10/12 mx-auto flex justify-evenly flex-wrap gap-5 md:gap-10">
 		  <div class="flex flex-col gap-3 md:gap-6">
-			<h3 class="text-4xl md:text-5xl font-semibold">{t('sobremi.titulo')}</h3>
+			<h3 class="text-3xl md:text-5xl font-semibold">{t('sobremi.titulo')}</h3>
 			<p class="max-w-[60ch] text-sm md:text-base">
 			  <span class="font-semibold text-base md:text-lg">{t('sobremi.descSpan')}</span><br>{t('sobremi.desc')}
 			</p>
@@ -53,10 +54,10 @@ const t = useTranslations(lang);
 		</div>
 		<img src="/planeBajar.svg" alt="flecha" class="w-14 md:w-20 self-end relative bottom-2 animate-bounce"/>
 	  </section>
-	  <section class="h-svh grid place-items-center md:grid-rows-4 snap-start">
-		<img src="/planeSubir.svg" alt="flecha" class="rotate-[-45deg] w-12 md:w-16 self-start relative top-10 opacity-0"/>
+	  <section class="h-svh grid place-content-center snap-start">
+		<img src="/planeSubir.svg" alt="flecha" class="rotate-[-45deg] w-12 md:w-16 self-start relative top-10 hidden"/>
 		<div class="lg:max-w-[1000px] max-w-[370px] md:max-w-[650px] xl:max-w-[1100px] self-start">
-			<h3 class="md:text-5xl text-4xl font-semibold text-center mb-5 md:mb-7">{t('proyectos.titulo')}</h3>
+			<h3 class="md:text-5xl text-3xl font-semibold text-center mb-5 md:mb-7">{t('proyectos.titulo')}</h3>
 				<SwiperCarouselEn client:visible />
 		</div>
 	</section>
