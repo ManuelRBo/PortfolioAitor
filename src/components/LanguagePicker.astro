@@ -7,8 +7,8 @@ const translatePath = useTranslatedPath(langUrl);
 ---
 <ul class="flex gap-5">
   {Object.entries(languages).map(([lang, label]) => (
-    <li>
-      <a class={langUrl === lang ? 'font-bold' : ''} href={translatePath('/', lang)}>{label}</a>
+    <li class={langUrl === lang ? 'font-bold scale-110' : 'hover:scale-110 transition-transform'}>
+      <a href={translatePath('/', lang)}>{label}</a>
     </li>
   ))}
 </ul>

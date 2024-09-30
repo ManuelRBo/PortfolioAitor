@@ -1,8 +1,8 @@
 ---
-import SwiperCarouselEs from '../components/carrouselEs';
-import Layout from '../layouts/Layout.astro';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import LanguagePicker from '../components/LanguagePicker.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import LanguagePicker from '../../components/LanguagePicker.astro';
+import SwiperCarouselFr from '../../components/carrouselFr';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -58,7 +58,7 @@ const t = useTranslations(lang);
 		<img src="/planeSubir.svg" alt="flecha" class="rotate-[-45deg] w-12 md:w-16 self-start relative top-10 hidden"/>
 		<div class="lg:max-w-[1000px] max-w-[370px] md:max-w-[650px] xl:max-w-[1100px] self-start">
 			<h3 class="md:text-5xl text-3xl font-semibold text-center mb-5 md:mb-7">{t('proyectos.titulo')}</h3>
-				<SwiperCarouselEs client:visible />
+				<SwiperCarouselFr client:visible />
 		</div>
 	</section>
 </Layout>

@@ -1,6 +1,7 @@
 export const languages = {
-    es: 'Español',
-    en: 'English',
+    es: 'Es🇪🇦',
+    en: 'En🇬🇧',
+    fr: 'Fr🇫🇷',
 };
 
 export const defaultLang = 'es';
@@ -9,7 +10,7 @@ export const showDefaultLang = false;
 
 export const ui = {
     es: {
-        'intro.titulo': 'Aitor Lopez',
+        'intro.titulo': 'Aitor López',
         'intro.subtitulo': 'Ingeniero Aereoespacial Junior',
         'sobremi.titulo': 'Sobre mi',
         'sobremi.descSpan': '¡Buenas! Soy Aitor,',
@@ -17,11 +18,19 @@ export const ui = {
         'proyectos.titulo': 'Proyectos',
     },
     en: {
-        'intro.titulo': 'Aitor Lopez',
+        'intro.titulo': 'Aitor López',
         'intro.subtitulo': 'Junior Aerospace Engineer',
         'sobremi.titulo': 'About me',
         'sobremi.descSpan': 'Hello! I am Aitor,',
         'sobremi.desc': 'An aerospace engineering student about to graduate and excited to embark on my professional career. Willing to apply my airport knowledge in project development and management. I aspire to harbor knowledge about the world, continuously expanding my tools as an engineer. Join me on this journey!',
         'proyectos.titulo': 'Projects',
     },
+    fr: {
+        'intro.titulo': 'Aitor López',
+        'intro.subtitulo': 'Ingénieur Aérospatial Junior',
+        'sobremi.titulo': 'À propos de moi',
+        'sobremi.descSpan': 'Bonjour! Je suis Aitor,',
+        'sobremi.desc': 'Un étudiant en génie aérospatial sur le point de terminer ses études et excité de se lancer dans sa carrière professionnelle. Prêt à appliquer mes connaissances aéroportuaires dans le développement et la gestion de projets. J\'aspire à accueillir des connaissances sur le monde, en élargissant continuellement mes outils en tant qu\'ingénieur. Rejoignez-moi dans ce voyage!',
+        'proyectos.titulo': 'Projets',
+    }
 } as const;

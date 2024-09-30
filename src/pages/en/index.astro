@@ -6,7 +6,6 @@ import SwiperCarouselEn from '../../components/carrouselEn';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 ---
 
 <Layout title="Aitor Lopez">
@@ -37,7 +36,7 @@ const t = useTranslations(lang);
 		</div>
 		<img src="/planeBajar.svg" alt="flecha" class="w-14 md:w-20 self-end relative bottom-2 animate-bounce"/>
 	</section>
-	<section class="h-svh grid place-items-center relative snap-start">
+	<section class="h-svh grid place-items-center relative md:grid-rows-[auto_0px] snap-start">
 		<img
 		  src="/planeSubir.svg"
 		  alt="flecha"
