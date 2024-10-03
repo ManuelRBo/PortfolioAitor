@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 import LanguagePicker from '../../components/LanguagePicker.astro';
 import SwiperCarouselFr from '../../components/carrouselFr';
+import { Image } from 'astro:assets';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -50,7 +51,15 @@ const t = useTranslations(lang);
 			  <span class="font-semibold text-base md:text-lg">{t('sobremi.descSpan')}</span><br>{t('sobremi.desc')}
 			</p>
 		  </div>
-		  <div class="md:w-[350px] bg-black md:h-[350px] w-80 h-60"></div>
+		  <Image
+		 	title='Foto de Aitor'
+		  	style="mask-image: linear-gradient(black 70%, transparent 100%);"
+			src={'/fotoAitor.png'}
+			alt="Foto de Aitor"
+			width={210}
+			height={210}
+			class='w-52 md:w-72 rounded-full'
+		  />
 		</div>
 		<img src="/planeBajar.svg" alt="flecha" class="w-14 md:w-20 self-end relative bottom-2 animate-bounce"/>
 	  </section>
